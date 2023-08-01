@@ -1,0 +1,12 @@
+version = 0.1
+[dev]
+[dev.deploy]
+[dev.deploy.parameters]
+stack_name = "Sam-NodeJS-App"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1rjdw5m5ugpye"
+s3_prefix = "Sam-NodeJS-App"
+region = "ap-south-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
