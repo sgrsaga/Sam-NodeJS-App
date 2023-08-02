@@ -10,3 +10,14 @@ confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
 image_repositories = []
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "Sam-Node-RestAPI"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1rjdw5m5ugpye"
+s3_prefix = "Sam-Node-RestAPI"
+region = "ap-south-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

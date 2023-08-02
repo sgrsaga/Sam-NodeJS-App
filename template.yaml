@@ -27,7 +27,22 @@ Resources:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /health
-            Method: get
+            Method: GET
+        AddItem:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /products
+            Method: GET
+  MyDynamoDB:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+      PrimaryKey: 
+        Name: "ProductCode"
+        Type: String
+      TableName: MyProductInfo
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
