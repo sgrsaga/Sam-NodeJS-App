@@ -9,7 +9,7 @@
     "type": "module",
     "dependencies": {
         "@aws-sdk/client-dynamodb": "^3.382.0",
-        "aws-sdk": "^2.1427.0",
+        "aws-sdk": "^2.1429.0",
         "axios": ">=0.21.1"
     },
     "scripts": {
